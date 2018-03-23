@@ -16,6 +16,7 @@
                    // elments[i].style.borderWidth = '2px';
                   //  elments[i].style.borderStyle = 'solid';
                   //  elments[i].style.backgroundColor = 'rgba(255,0,0, 0.2)';
+                  
                     
                     
                // }
@@ -24,15 +25,21 @@
 		$(function () {
 			// All jQuery code goes here
             
-            $('li:first').css('background-color', 'rgb(248, 95, 95)');
-            $('li:last').css('background-color', 'rgb(248, 95, 95)');
+           // $('li:first').css('background-color', 'rgb(248, 95, 95)');
+            //$('li:last').css('background-color', 'rgb(248, 95, 95)');
             $('input[name$="Val"]').css('border', '1px solid red');
             //$('input[name="nameVal"]').css('border', '1px solid red');
             $('input[name="phoneNum"]').css('border', '1px solid red');
             $('button').css('border', '1px solid red');
 			$('#alcoveLogo').css('opacity', 0.2);
             $('h2').css('border', '1px solid red');
-			$('.servicesBtn').css('color', '#FFF');
+			$('.servicesBtn').css('color', '#23f');
+            
+            $('#alcoveLogo').next().css('background-color','rgba(255,0,0,0.2)');
+            $('.box1').nextAll().css('background-color','rgba(255,0,0,0.2)');
+            //$('.header').children().css('background-color','rgba(255,0,0,0.2)');
+            $(".navigation > li:eq(2)").parent().css('opacity','0.3');
+            $('.servicesBtn').closest('div').css('background-color','rgba(255,0,0,0.2)');
 		})
 	</script>
 </head>
